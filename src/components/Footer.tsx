@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
           <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>The Life Calendar</h3>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-            Built with ❤️ by HoxLabs
+            Built with ❤️ by <a href="https://hoxlabs.com/" target="_blank" style={{ color: 'var(--text-primary)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.3)' }}>HoxLabs</a>
           </p>
         </div>
         
