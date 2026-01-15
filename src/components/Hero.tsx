@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
           
           <div className="hero-actions animate-fade-in delay-200">
-            <a href="https://github.com/hoxlabs/thelifecalender_landingPage/blob/main/public/app-release.apk" target="_blank" className="btn-primary">
+            <a href="https://github.com/hoxlabs/thelifecalender_landingPage/raw/main/public/app-release.apk" target="_blank" className="btn-primary">
               Download APK
             </a>
             <a href="#features" className="btn-secondary">
