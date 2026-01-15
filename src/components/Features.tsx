@@ -1,5 +1,4 @@
 
-
 const features = [
   {
     title: "Life Calendar",
@@ -40,31 +39,17 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" style={{ padding: '8rem 0' }}>
+    <section id="features" className="features-section">
       <div className="container">
-        <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-          <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Three Modes. One Purpose.</h2>
+        <div className="features-header">
+          <h2 className="features-title">Three Modes. One Purpose.</h2>
           <p style={{ color: 'var(--text-secondary)' }}>Choose the visualization that matters most to you.</p>
         </div>
 
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-          gap: '2rem' 
-        }}>
+        <div className="features-grid">
           {features.map((f, i) => (
-            <div key={i} className="glass-panel" style={{ padding: '2.5rem', transition: 'transform 0.3s ease' }}>
-              <div style={{ 
-                width: '50px', 
-                height: '50px', 
-                background: 'rgba(255,255,255,0.1)', 
-                borderRadius: '12px', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center',
-                marginBottom: '1.5rem',
-                color: 'var(--text-primary)'
-              }}>
+            <div key={i} className="glass-panel feature-card">
+              <div className="feature-icon-wrapper">
                 {f.icon}
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{f.title}</h3>

@@ -65,4 +65,4 @@ The source code is located in the [`my-react-app`](./my-react-app) directory.
 - **Android Development**: HoxLabs
 - **Original Concept**: Luis Batalha & João Batalha
 - **Inspiration**: [The Life Calendar](https://www.thelifecalendar.com/)
-- **Built with ❤️ by [HoxLabs](https://hoxlabs.com/)**
+- **Built by [HoxLabs](https://hoxlabs.com/)**
