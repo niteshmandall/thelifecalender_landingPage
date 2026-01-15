@@ -1,6 +1,7 @@
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Usp from './components/Usp';
 import Features from './components/Features';
 import TechStack from './components/TechStack';
 import Footer from './components/Footer';
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Usp />
         <Features />
         <TechStack />
       </main>
