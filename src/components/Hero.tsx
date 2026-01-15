@@ -16,10 +16,28 @@ const Hero = () => {
     <section className="hero-section">
       <div className="hero-glow" />
 
-      <div className="container hero-container-split">
+      <div className="container hero-container-centered">
         
-        {/* Left Column: Text */}
-        <div className="hero-content animate-fade-in">
+        {/* Top: Phone Mockup */}
+        <div className="hero-image-wrapper animate-fade-in">
+          <div className="phone-mockup">
+            <img 
+              src={screenshots[activeTab]} 
+              alt={`${activeTab} Calendar Preview`} 
+              className="app-screenshot fade-transition"
+              key={activeTab} // Force re-render for animation
+            />
+          </div>
+          
+          {/* Floating Elements */}
+          <div className="floating-card card-1 glass-panel">
+            <span>{activeTab === 'year' ? 'Year Progress' : activeTab === 'life' ? 'Life Progress' : 'Goal Target'}</span>
+            <strong>{activeTab === 'year' ? '12%' : activeTab === 'life' ? '45%' : '80%'}</strong>
+          </div>
+        </div>
+
+        {/* Bottom: Text */}
+        <div className="hero-content animate-fade-in delay-200">
           <span className="hero-badge">Available for Android</span>
           
           <h1 className="hero-title">
@@ -63,24 +81,6 @@ const Hero = () => {
                 Goal
               </button>
             </div>
-          </div>
-        </div>
-
-        {/* Right Column: Phone Mockup */}
-        <div className="hero-image-wrapper animate-fade-in delay-200">
-          <div className="phone-mockup">
-            <img 
-              src={screenshots[activeTab]} 
-              alt={`${activeTab} Calendar Preview`} 
-              className="app-screenshot fade-transition"
-              key={activeTab} // Force re-render for animation
-            />
-          </div>
-          
-          {/* Floating Elements */}
-          <div className="floating-card card-1 glass-panel">
-            <span>{activeTab === 'year' ? 'Year Progress' : activeTab === 'life' ? 'Life Progress' : 'Goal Target'}</span>
-            <strong>{activeTab === 'year' ? '12%' : activeTab === 'life' ? '45%' : '80%'}</strong>
           </div>
         </div>
 
